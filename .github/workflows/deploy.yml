@@ -13,10 +13,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Python
+      - name: Uninstall default Python
+        run: sudo apt-get remove -y python3
+
+      - name: Install Python 3.9
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3.9 python3.9-venv python3.9-dev
+          sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 1
+
+      - name: Set up Python 3.9
         uses: actions/setup-python@v3
         with:
-          python-version: '3.9'  
+          python-version: '3.9'
 
       - name: Install dependencies
         run: |
