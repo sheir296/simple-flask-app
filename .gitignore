@@ -28,3 +28,4 @@ dist/
 # Database Files
 *.db
 *.sqlite3
+.vercel
