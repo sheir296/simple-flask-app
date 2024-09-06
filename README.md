@@ -1,3 +1,6 @@
+# simple-flask-app
+mlops-class-activity
+
 # Simple Flask App
 
 This project is a simple Flask application with a linear regression model. The app provides an HTML front-end and a REST API to interact with the model.
