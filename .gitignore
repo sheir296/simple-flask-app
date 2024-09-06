@@ -1,16 +1,30 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*.pyo
-
-# Virtual environment
+# Virtual Environment
 venv/
+.venv/
 
-# Environment variables
+# Compiled Python Files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment Files
 .env
 
-# MacOS
-.DS_Store
+# Build and Distribution Files
+build/
+dist/
+*.egg-info/
 
-# Pytest cache
-.pytest_cache/
+# IDE and Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Log Files
+*.log
+
+# Database Files
+*.db
+*.sqlite3
